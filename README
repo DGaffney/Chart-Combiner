@@ -1,0 +1,27 @@
+====
+Chart Combiner
+
+
+All you need is ruby.
+====
+
+Dump a whole bunch of CSVs that look sort of like this:
+(Just dump them in the root file alongside Chart Combiner code)
+
+#blah.csv
+time,frequency
+2010-01-01 01:01:01,4
+2010-01-01 01:01:10,6
+2010-01-01 01:01:15,10
+...
+
+And get this:
+
+#synthesized_output.csv
+Time,blah,blah2,total
+2010-01-01 01:01:01,4,5,9
+2010-01-01 01:01:10,6,1,7
+2010-01-01 01:01:15,10,2,12
+
+irb, then load "chart.rb" or ruby chart.rb to run.
+
